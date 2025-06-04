@@ -123,7 +123,7 @@
                                 </Button>
                                 <Button Width="20" Height="20" Margin="2" Click="DeleteSerial_Click"
                                                 Background="Transparent" BorderBrush="Transparent"
-                                                Cursor="Hand" ToolTip="Usuń">
+                                                Cursor="Hand" ToolTip="Usuń" Tag="{Binding}">
                                     <Image Source="C:\Users\witol\source\repos\numeryseryjne\numeryseryjneWPF\Images\delete-64.jpg" Stretch="Uniform"/>
                                 </Button>
                             </StackPanel>
