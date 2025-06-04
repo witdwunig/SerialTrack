@@ -1,0 +1,4 @@
+C:\Users\witol\Desktop\SerialTrack\numeryseryjneWPF\obj\Release\net8.0-windows\MainWindow.g.cs
+C:\Users\witol\Desktop\SerialTrack\numeryseryjneWPF\obj\Release\net8.0-windows\App.g.cs
+C:\Users\witol\Desktop\SerialTrack\numeryseryjneWPF\obj\Release\net8.0-windows\numeryseryjneWPF_MarkupCompile.cache
+C:\Users\witol\Desktop\SerialTrack\numeryseryjneWPF\obj\Release\net8.0-windows\numeryseryjneWPF_MarkupCompile.lref

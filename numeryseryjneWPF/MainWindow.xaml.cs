@@ -78,15 +78,6 @@ namespace SerialTrack
             Debug.WriteLine("Kliknięto usuń");
             if (sender is Button btn && btn.Tag is SerialItem item)
             {
-                Debug.WriteLine($"Tag: {btn.Tag}");
-                if (btn.Tag is SerialItem item)
-                {
-                    Debug.WriteLine($"Usuwanie: {item.SerialNumber}");
-                }
-                else
-                {
-                    Debug.WriteLine("Tag nie jest typu SerialItem!");
-                }
                 var confirm = MessageBox.Show("Usunąć numer seryjny?", "Potwierdzenie", MessageBoxButton.YesNo);
                 if (confirm == MessageBoxResult.Yes)
                 {
@@ -95,7 +86,6 @@ namespace SerialTrack
                     if (result)
                     {
                         MessageBox.Show("Usunięto pomyślnie.");
-                        await LoadSerialsAsync();
                     }
                     else
                     {
@@ -114,11 +104,13 @@ namespace SerialTrack
                 if (!string.IsNullOrWhiteSpace(newSerial) && newSerial != item.SerialNumber)
                 {
                     item.SerialNumber = newSerial;
-                    var result = await _apiService.UpdateSerialNumberAsync(item);
+
+                    var serialNumberToUpdate = ConvertToSerialNumber(item);
+                    var result = await _apiService.UpdateSerialNumberAsync(serialNumberToUpdate);
+
                     if (result)
                     {
                         MessageBox.Show("Zaktualizowano pomyślnie.");
-                        await LoadSerialsAsync();
                     }
                     else
                     {
@@ -128,28 +120,29 @@ namespace SerialTrack
             }
         }
 
+
         private async void GenerateSerialNumber_Click(object sender, RoutedEventArgs e)
         {
-            string product = ProductTextBox.Text;
+            string product = ProductNameTextBox.Text;
 
             if (string.IsNullOrWhiteSpace(product))
             {
                 MessageBox.Show("Wprowadź nazwę produktu.", "Błąd", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
-
-            SerialItem serialItem = await _apiService.GenerateSerialNumberAsync(product);
-
+            
+            SerialNumber serialNumber = await _apiService.GenerateSerialNumberAsync(product);
+            SerialItem serialItem = ConvertToSerialItem(serialNumber);
             if (serialItem != null)
             {
-                SerialNumberTextBlock.Text = $"Numer seryjny: {serialItem.SerialNumber}";
-                ProductNameTextBlock.Text = $"Produkt: {serialItem.ProductName}";
-                DateGeneratedTextBlock.Text = $"Data wygenerowania: {serialItem.DateGenerated.LocalDateTime.ToString("g")}";
+                ProductNameTextBox.Text = $"Produkt: {serialItem.ProductName}";
             }
             else
             {
                 MessageBox.Show("Nie udało się wygenerować numeru seryjnego.", "Błąd", MessageBoxButton.OK, MessageBoxImage.Error);
             }
+
+
         }
 
         private void ToggleFiltersVisibility(object sender, RoutedEventArgs e)
@@ -211,10 +204,39 @@ namespace SerialTrack
             ApplyFilters();
         }
 
+        private SerialItem ConvertToSerialItem(SerialNumber sn)
+        {
+            if (sn == null) return null;
+
+            return new SerialItem
+            {
+                id = sn.id,
+                SerialNumber = sn.number,
+                ProductName = sn.name,
+                DateGenerated = sn.CreatedAt
+            };
+        }
+
+        private SerialNumber ConvertToSerialNumber(SerialItem item)
+        {
+            if (item == null) return null;
+
+            return new SerialNumber
+            {
+                id = item.id,
+                number = item.SerialNumber,
+                name = item.ProductName,
+                CreatedAt = item.DateGenerated
+            };
+        }
+
+
     }
+
 
     public class SerialItem
     {
+        public int id { get; set; }
         public string SerialNumber { get; set; }
         public string ProductName { get; set; }
         public DateTimeOffset DateGenerated { get; set; }

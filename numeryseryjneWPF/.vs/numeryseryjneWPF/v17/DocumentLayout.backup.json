@@ -1,22 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\mateu\\Desktop\\numeryseryjne\\numeryseryjneWPF\\",
+  "WorkspaceRootPath": "C:\\Users\\witol\\Desktop\\SerialTrack\\numeryseryjneWPF\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{274841AA-D205-41B7-9A48-C8B382247940}|numeryseryjneWPF.csproj|c:\\users\\mateu\\desktop\\numeryseryjne\\numeryseryjnewpf\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{274841AA-D205-41B7-9A48-C8B382247940}|numeryseryjneWPF.csproj|solutionrelative:services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{274841AA-D205-41B7-9A48-C8B382247940}|numeryseryjneWPF.csproj|c:\\users\\mateu\\desktop\\numeryseryjne\\numeryseryjnewpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{274841AA-D205-41B7-9A48-C8B382247940}|numeryseryjneWPF.csproj|c:\\users\\witol\\desktop\\serialtrack\\numeryseryjnewpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{274841AA-D205-41B7-9A48-C8B382247940}|numeryseryjneWPF.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{274841AA-D205-41B7-9A48-C8B382247940}|numeryseryjneWPF.csproj|c:\\users\\mateu\\desktop\\numeryseryjne\\numeryseryjnewpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{274841AA-D205-41B7-9A48-C8B382247940}|numeryseryjneWPF.csproj|c:\\users\\witol\\desktop\\serialtrack\\numeryseryjnewpf\\models\\serialnumber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{274841AA-D205-41B7-9A48-C8B382247940}|numeryseryjneWPF.csproj|solutionrelative:models\\serialnumber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{274841AA-D205-41B7-9A48-C8B382247940}|numeryseryjneWPF.csproj|c:\\users\\witol\\desktop\\serialtrack\\numeryseryjnewpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{274841AA-D205-41B7-9A48-C8B382247940}|numeryseryjneWPF.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{274841AA-D205-41B7-9A48-C8B382247940}|numeryseryjneWPF.csproj|c:\\users\\mateu\\desktop\\numeryseryjne\\numeryseryjnewpf\\models\\serialnumber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{274841AA-D205-41B7-9A48-C8B382247940}|numeryseryjneWPF.csproj|solutionrelative:models\\serialnumber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{274841AA-D205-41B7-9A48-C8B382247940}|numeryseryjneWPF.csproj|c:\\users\\witol\\desktop\\serialtrack\\numeryseryjnewpf\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{274841AA-D205-41B7-9A48-C8B382247940}|numeryseryjneWPF.csproj|solutionrelative:services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,54 +30,51 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "SerialNumber.cs",
-              "DocumentMoniker": "C:\\Users\\mateu\\Desktop\\numeryseryjne\\numeryseryjneWPF\\Models\\SerialNumber.cs",
+              "DocumentMoniker": "C:\\Users\\witol\\Desktop\\SerialTrack\\numeryseryjneWPF\\Models\\SerialNumber.cs",
               "RelativeDocumentMoniker": "Models\\SerialNumber.cs",
-              "ToolTip": "C:\\Users\\mateu\\Desktop\\numeryseryjne\\numeryseryjneWPF\\Models\\SerialNumber.cs",
+              "ToolTip": "C:\\Users\\witol\\Desktop\\SerialTrack\\numeryseryjneWPF\\Models\\SerialNumber.cs",
               "RelativeToolTip": "Models\\SerialNumber.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAdAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-13T07:11:09.3Z",
+              "WhenOpened": "2025-06-04T13:29:47.598Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApiService.cs",
+              "DocumentMoniker": "C:\\Users\\witol\\Desktop\\SerialTrack\\numeryseryjneWPF\\Services\\ApiService.cs",
+              "RelativeDocumentMoniker": "Services\\ApiService.cs",
+              "ToolTip": "C:\\Users\\witol\\Desktop\\SerialTrack\\numeryseryjneWPF\\Services\\ApiService.cs",
+              "RelativeToolTip": "Services\\ApiService.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T13:29:44.333Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\witol\\Desktop\\SerialTrack\\numeryseryjneWPF\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\witol\\Desktop\\SerialTrack\\numeryseryjneWPF\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AgIAAKQAAAAAAAAAAAAUwPEAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T13:29:37.909Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\mateu\\Desktop\\numeryseryjne\\numeryseryjneWPF\\MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\witol\\Desktop\\SerialTrack\\numeryseryjneWPF\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "C:\\Users\\mateu\\Desktop\\numeryseryjne\\numeryseryjneWPF\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\witol\\Desktop\\SerialTrack\\numeryseryjneWPF\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-13T06:47:26.647Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ApiService.cs",
-              "DocumentMoniker": "C:\\Users\\mateu\\Desktop\\numeryseryjne\\numeryseryjneWPF\\Services\\ApiService.cs",
-              "RelativeDocumentMoniker": "Services\\ApiService.cs",
-              "ToolTip": "C:\\Users\\mateu\\Desktop\\numeryseryjne\\numeryseryjneWPF\\Services\\ApiService.cs",
-              "RelativeToolTip": "Services\\ApiService.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAowB4AAABRAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-13T04:57:49.315Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\mateu\\Desktop\\numeryseryjne\\numeryseryjneWPF\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\mateu\\Desktop\\numeryseryjne\\numeryseryjneWPF\\MainWindow.xaml.cs",
-              "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AQIAAGYAAAAAAAAAAAAswLcAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T09:50:37.485Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-04T13:29:35.228Z"
             }
           ]
         }
