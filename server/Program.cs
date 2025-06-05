@@ -20,6 +20,8 @@ internal static class Program
     static async Task Main(string[] args)
     {
         Log.Logger = new LoggerConfiguration()
+            .MinimumLevel.Information()
+            .Enrich.FromLogContext()
             .WriteTo.File("Log/server-log.txt", rollingInterval: RollingInterval.Day)
             .CreateLogger();
 
@@ -47,7 +49,7 @@ internal static class Program
         using (var scope = app.Services.CreateScope())
         {
             var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
-            db.Database.Migrate(); // Ensures DB file and schema exist
+            db.Database.Migrate(); 
         }   
 
         if (app.Environment.IsDevelopment())
@@ -60,10 +62,8 @@ internal static class Program
         app.UseAuthorization();
         app.MapControllers();
 
-        // Start the web app but don’t block main thread
         var webAppTask = app.RunAsync();
 
-        // Setup tray icon
         string exeDir = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
         string iconPath = Path.Combine(exeDir!, "favicon.ico");
         using var trayIcon = new NotifyIcon()

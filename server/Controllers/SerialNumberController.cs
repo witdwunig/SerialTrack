@@ -56,25 +56,23 @@ namespace SerialNumberAPI.Controllers
             _context.SerialNumbers.Remove(serial);
             await _context.SaveChangesAsync();
 
-            return NoContent(); // 204 No Content is typically returned for successful DELETE
+            return NoContent();
         }
 
-        // Add this for full UPDATE functionality (PUT)
         [HttpPut("{number}")]
-        public async Task<IActionResult> UpdateSerialNumber(string number, SerialNumber updatedSerial)
+        public async Task<IActionResult> UpdateSerialNumber(string number, [FromBody] SerialNumber updatedSerial)
         {
             if (number != updatedSerial.Number)
             {
                 return BadRequest("ID mismatch");
             }
 
-            var existingSerial = await _context.SerialNumbers.FirstOrDefaultAsync(s => s.Number == number);
+            var existingSerial = await _context.SerialNumbers.FirstOrDefaultAsync(s => s.Number.ToLower() == number.ToLower());
             if (existingSerial == null)
             {
                 return NotFound();
             }
 
-            // Update all properties
             existingSerial.Name = updatedSerial.Name;
             existingSerial.Number = updatedSerial.Number;
 
@@ -94,7 +92,7 @@ namespace SerialNumberAPI.Controllers
                 }
             }
 
-            return NoContent(); // 204 No Content is typical for successful PUT
+            return NoContent();
         }
         private bool SerialNumberExists(string number)
         {
