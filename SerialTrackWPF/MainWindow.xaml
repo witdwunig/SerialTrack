@@ -116,9 +116,9 @@
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
                             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                                <Button Width="20" Height="20" Margin="2" 
+                                <Button Width="20" Height="20" Margin="2"
                                                 Background="Transparent" BorderBrush="Transparent"
-                                                Cursor="Hand" ToolTip="Edytuj">
+                                                Cursor="Hand" ToolTip="Edytuj" Tag="{Binding}" Click="EditSerial_Click">
                                     <Image Source="C:\Users\witol\source\repos\numeryseryjne\numeryseryjneWPF\Images\pen.png" Stretch="Uniform"/>
                                 </Button>
                                 <Button Width="20" Height="20" Margin="2" Click="DeleteSerial_Click"

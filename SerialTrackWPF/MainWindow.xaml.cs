@@ -5,6 +5,7 @@ using System.Collections.ObjectModel;
 using System.Windows;
 using System.Windows.Controls;
 using System.Diagnostics;
+using System.Text.Json.Serialization;
 
 namespace SerialTrackWPF
 {
@@ -94,6 +95,40 @@ namespace SerialTrackWPF
                         MessageBox.Show("Błąd przy usuwaniu.");
                     }
                 }
+            }
+        }
+
+        private async void EditSerial_Click(object sender, RoutedEventArgs e)
+        {
+            Debug.WriteLine("kliknieto edytuj");
+            if (sender is Button btn && btn.Tag is SerialItem item)
+            {
+                // Pytamy użytkownika o nową nazwę produktu
+                var newName = Microsoft.VisualBasic.Interaction.InputBox(
+                    "Podaj nowe dane:",
+                    "Edytuj nazwę produktu",
+                    item.ProductName);
+
+                if (!string.IsNullOrWhiteSpace(newName) && newName != item.ProductName)
+                {
+                    item.ProductName = newName;  // <-- Poprawka tutaj: przypisujemy nową nazwę produktu
+
+                    bool success = await _apiService.UpdateSerialNumberAsync(item);
+
+                    if (success)
+                    {
+                        MessageBox.Show("Nazwa produktu została zaktualizowana.", "Sukces");
+                        // Ewentualne odświeżenie widoku
+                    }
+                    else
+                    {
+                        MessageBox.Show("Wystąpił błąd podczas aktualizacji.", "Błąd");
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Nie można znaleźć elementu do edycji.", "Błąd");
             }
         }
 
@@ -193,8 +228,11 @@ namespace SerialTrackWPF
     public class SerialItem
     {
         public int id { get; set; }
+        [JsonPropertyName("number")]
         public string SerialNumber { get; set; }
+        [JsonPropertyName("name")]
         public string ProductName { get; set; }
+        [JsonPropertyName("createdAt")]
         public DateTimeOffset DateGenerated { get; set; }
     }
 }
