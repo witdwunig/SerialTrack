@@ -39,15 +39,15 @@
             <!-- Filters (Initially Hidden) -->
             <StackPanel x:Name="FiltersPanel" Orientation="Vertical" HorizontalAlignment="Center" Margin="0,0,0,10" Visibility="Collapsed">
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,10">
-                    <Label Content="Serial Number:" VerticalAlignment="Center" Width="120" HorizontalAlignment="Right"/>
+                    <Label Content="Numer seryjny:" VerticalAlignment="Center" Width="120" HorizontalAlignment="Right"/>
                     <TextBox x:Name="SerialNumberFilterTextBox" Width="200" Height="30" Margin="10,0" ToolTip="Filter by Serial Number" VerticalAlignment="Center" Padding="5" Background="#f3f3f3" BorderBrush="#ddd" BorderThickness="1"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,10">
-                    <Label Content="Product Name:" VerticalAlignment="Center" Width="120" HorizontalAlignment="Right"/>
+                    <Label Content="Nazwa produktu:" VerticalAlignment="Center" Width="120" HorizontalAlignment="Right"/>
                     <TextBox x:Name="ProductNameFilterTextBox" Width="200" Height="30" Margin="10,0" ToolTip="Filter by Product Name" VerticalAlignment="Center" Padding="5" Background="#f3f3f3" BorderBrush="#ddd" BorderThickness="1"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,10">
-                    <Label Content="Date Generated:" VerticalAlignment="Center" Width="120" HorizontalAlignment="Right"/>
+                    <Label Content="Data wygenerowania: " VerticalAlignment="Center" Width="125" HorizontalAlignment="Right"/>
                     <DatePicker x:Name="DateFilter" Width="200" Height="30" Margin="10,0" VerticalAlignment="Center" Padding="5" Background="#f3f3f3" BorderBrush="#ddd" BorderThickness="1"/>
                 </StackPanel>
             </StackPanel>

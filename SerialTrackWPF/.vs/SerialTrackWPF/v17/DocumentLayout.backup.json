@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\witol\\Desktop\\SerialTrack\\SerialTrackWPF\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0C8D620A-8C66-3A36-EA93-533871B2811D}|SerialTrackWPF.csproj|c:\\users\\witol\\desktop\\serialtrack\\serialtrackwpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0C8D620A-8C66-3A36-EA93-533871B2811D}|SerialTrackWPF.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0C8D620A-8C66-3A36-EA93-533871B2811D}|SerialTrackWPF.csproj|c:\\users\\witol\\desktop\\serialtrack\\serialtrackwpf\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0C8D620A-8C66-3A36-EA93-533871B2811D}|SerialTrackWPF.csproj|solutionrelative:services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,12 +11,16 @@
       "RelativeMoniker": "D:0:0:{0C8D620A-8C66-3A36-EA93-533871B2811D}|SerialTrackWPF.csproj|solutionrelative:services\\serverdiscoveryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0C8D620A-8C66-3A36-EA93-533871B2811D}|SerialTrackWPF.csproj|c:\\users\\witol\\desktop\\serialtrack\\serialtrackwpf\\models\\serialnumber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0C8D620A-8C66-3A36-EA93-533871B2811D}|SerialTrackWPF.csproj|solutionrelative:models\\serialnumber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0C8D620A-8C66-3A36-EA93-533871B2811D}|SerialTrackWPF.csproj|c:\\users\\witol\\desktop\\serialtrack\\serialtrackwpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C8D620A-8C66-3A36-EA93-533871B2811D}|SerialTrackWPF.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0C8D620A-8C66-3A36-EA93-533871B2811D}|SerialTrackWPF.csproj|c:\\users\\witol\\desktop\\serialtrack\\serialtrackwpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{0C8D620A-8C66-3A36-EA93-533871B2811D}|SerialTrackWPF.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C8D620A-8C66-3A36-EA93-533871B2811D}|SerialTrackWPF.csproj|c:\\users\\witol\\desktop\\serialtrack\\serialtrackwpf\\models\\serialnumber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C8D620A-8C66-3A36-EA93-533871B2811D}|SerialTrackWPF.csproj|solutionrelative:models\\serialnumber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,11 +30,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "SerialNumber.cs",
               "DocumentMoniker": "C:\\Users\\witol\\Desktop\\SerialTrack\\SerialTrackWPF\\Models\\SerialNumber.cs",
               "RelativeDocumentMoniker": "Models\\SerialNumber.cs",
@@ -42,12 +42,11 @@
               "RelativeToolTip": "Models\\SerialNumber.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T07:37:20.574Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-05T07:37:20.574Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "ServerDiscoveryService.cs",
               "DocumentMoniker": "C:\\Users\\witol\\Desktop\\SerialTrack\\SerialTrackWPF\\Services\\ServerDiscoveryService.cs",
               "RelativeDocumentMoniker": "Services\\ServerDiscoveryService.cs",
@@ -60,33 +59,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "ApiService.cs",
               "DocumentMoniker": "C:\\Users\\witol\\Desktop\\SerialTrack\\SerialTrackWPF\\Services\\ApiService.cs",
               "RelativeDocumentMoniker": "Services\\ApiService.cs",
               "ToolTip": "C:\\Users\\witol\\Desktop\\SerialTrack\\SerialTrackWPF\\Services\\ApiService.cs",
               "RelativeToolTip": "Services\\ApiService.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAowEUAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-04T18:47:13.335Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\witol\\Desktop\\SerialTrack\\SerialTrackWPF\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\witol\\Desktop\\SerialTrack\\SerialTrackWPF\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABRAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAEUAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-04T17:26:07.234Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\witol\\Desktop\\SerialTrack\\SerialTrackWPF\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
